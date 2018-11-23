@@ -7,16 +7,16 @@ public class Main {
         try {
         if(age<18)
         {
-            throw new ArithmeticException("You are below 18.");
+            throw new ArithmeticException("Not eligible for Voting.");
         }
         else
-            System.out.println("Your age is perfect for giving vote.");
+            System.out.println("You are eligible for Voting.");
     }catch (ArithmeticException e) {
             e.printStackTrace();
         }
     }
     public static void main(String[] args) {
 	// write your code here
-        check(1);
+        check(12);
     }
 }
